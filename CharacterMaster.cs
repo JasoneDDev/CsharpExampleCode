@@ -48,8 +48,6 @@ public class CharacterMaster : MonoBehaviour {
 		HandNull =  GameObject.FindGameObjectWithTag("HandNull").transform;
 		
 		Character.renderer.material= HawesDiffuse;
-		//PlayerPrefs.SetString("currentWeapon","machete");
-		//PlayerPrefs.SetString("currentWeapon","shotgun");
 		weaponInHand = 2;
 		if(PlayerPrefs.GetString("currentWeapon") == "")
 		{
@@ -210,7 +208,6 @@ public class CharacterMaster : MonoBehaviour {
 			{
 					Speed = Mathf.Abs(Movement.z);
 			}
-			//Hawes.velocity;
 			}
 		else
 		{
@@ -351,9 +348,7 @@ public class CharacterMaster : MonoBehaviour {
 				{
 						Destroy(shotgunSpawn.gameObject);
 				}
-	//			else if()
-	//			{
-	//			}
+	
 				WS = null;
 				PlayerPrefs.SetString("currentWeapon","");
 			}
@@ -393,10 +388,6 @@ public class CharacterMaster : MonoBehaviour {
 				startScript.Ammunition=0;
 			}
 			
-	//		else if(weaponInHand == 3)
-	//		{
-	//			PlayerPrefs.SetString("currentWeapon","semiauto");
-	//		}
 		
 			StartCoroutine(Pause(0.2f));
 		}
