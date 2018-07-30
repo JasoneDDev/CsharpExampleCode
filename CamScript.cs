@@ -52,33 +52,8 @@ public class CamScript : MonoBehaviour
 			}
 			else
 			{
-				//Debug.Log(" Left= " + LBound.position.x + " right= " + RBound.position.x + " top= " + TBound.position.z);
 				bool x = true;
 				bool y = true;
-//				if(LBound.position.x < upperLeft.x && Movement.x < 0)
-//				{
-//						Movement.x=0;
-//					x=false;
-//				}
-//				
-//				if(RBound.position.x > lowerRight.x  && Movement.x > 0)
-//				{
-//					Movement.x=0;
-//					x=false;
-//				}
-//				
-//				if(TBound.position.z > upperLeft.y  && Movement.z > 0)
-//				{
-//					Movement.z=0;
-//					y=false;
-//				}
-//				
-//				if(BBound.position.z < lowerRight.y  && Movement.z < 0)
-//				{
-//					Movement.z=0;
-//					y=false;
-//				}
-//				
 				Move(x,y);
 				
 			}
